@@ -1,0 +1,1 @@
+![the new image](screenshot.png)
