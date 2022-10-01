@@ -31,7 +31,7 @@ In this tutorial you will learn how to:
 Once you have reset your password, type in this command in the terminal and replace the XX with your specific username.
 
 ```
-$ ssh cs15lafa22XX@ieng6.ucsd.edu
+$ ssh cs15lfa22XX@ieng6.ucsd.edu
 ```
 * Select (Yes) and enter your password 
 
@@ -69,5 +69,28 @@ $ ssh cs15lafa22XX@ieng6.ucsd.edu
 
 * Once you've done this, open a new terminal and type in the following commands into your terminal. 
 
+![javac](javac.png)
 
+* Run this scp command and enter your password
+
+```
+scp WhereAmI.java cs15lfa22XX@ieng6.ucsd.edu:~/
+
+```
+
+* Afterwards, log back into your remote computer using the ssh command and then use the javac and java commands from earlier. If done correctly, it should look similar to this. 
+
+![remoteJavac](remoteJavac.png)
+
+---
+
+**Step Five: Setting an SSH Key**
+
+* Instead of always having to type in our password when we need to log into our remote computer using ssh or scp, we can set up an ssh key. 
+
+* An ssh key program will create a public key whihc is copied to our remote server and the private key will be copied to our local computer. 
+
+* Follow these commands
+
+![ssh](ssh.png)
 
