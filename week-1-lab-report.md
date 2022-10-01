@@ -94,3 +94,22 @@ scp WhereAmI.java cs15lfa22XX@ieng6.ucsd.edu:~/
 
 ![ssh](ssh.png)
 
+```
+mkdir .ssh
+```
+
+* With an ssh key, you should be able to log in quicker than typing in your password. 
+
+---
+
+**Step Six: Optimzing Remote Running**
+
+* There are multiple ways to optimize remote running. These include: 
+
+1. Typing a command in quotes at the end of an ssh command to direclty run it on the remote server then exit right after. 
+2. Using semicolons to run multiple commands at once 
+3. Using the up-arrow to recall the latest commands to avaoid typing out the whole command again
+
+![optimize2](optimize2.png)
+
+* We were able to run four commands in a singular line, optimizing the amount of time and effort we need to put in, in order to achieve the same result.  
