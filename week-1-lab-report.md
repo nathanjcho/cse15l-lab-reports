@@ -31,7 +31,7 @@ In this tutorial you will learn how to:
 Once you have reset your password, type in this command in the terminal and replace the XX with your specific username.
 
 ```
-$ ssh cs15lafa22XX@ieng6.ucsd.edu
+$ ssh cs15lfa22XX@ieng6.ucsd.edu
 ```
 * Select (Yes) and enter your password 
 
@@ -69,6 +69,51 @@ $ ssh cs15lafa22XX@ieng6.ucsd.edu
 
 * Once you've done this, open a new terminal and type in the following commands into your terminal. 
 
+![javac](javac.png)
 
+* Run this scp command and enter your password
 
+<<<<<<< HEAD
 
+=======
+```
+scp WhereAmI.java cs15lfa22XX@ieng6.ucsd.edu:~/
+
+```
+
+* Afterwards, log back into your remote computer using the ssh command and then use the javac and java commands from earlier. If done correctly, it should look similar to this. 
+
+![remoteJavac](remoteJavac.png)
+
+---
+
+**Step Five: Setting an SSH Key**
+
+* Instead of always having to type in our password when we need to log into our remote computer using ssh or scp, we can set up an ssh key. 
+
+* An ssh key program will create a public key whihc is copied to our remote server and the private key will be copied to our local computer. 
+
+* Follow these commands
+
+![ssh](ssh.png)
+
+```
+mkdir .ssh
+```
+
+* With an ssh key, you should be able to log in quicker than typing in your password. 
+
+---
+
+**Step Six: Optimzing Remote Running**
+
+* There are multiple ways to optimize remote running. These include: 
+
+1. Typing a command in quotes at the end of an ssh command to direclty run it on the remote server then exit right after. 
+2. Using semicolons to run multiple commands at once 
+3. Using the up-arrow to recall the latest commands to avaoid typing out the whole command again
+
+![optimize2](optimize2.png)
+
+* We were able to run four commands in a singular line, optimizing the amount of time and effort we need to put in, in order to achieve the same result.  
+>>>>>>> 4d1a0afe1291ba84acfd0c72947d67489885895f
