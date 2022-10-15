@@ -96,5 +96,39 @@ class SearchEngine {
 
 **Part Two**
 
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+![failure1](failure1.png)
+* The failure-inducing input is any input that has a size greater than 1. When reversing the numbers, the array will only be able to properly reverse the first half of the array and will not be able to properly reverse the second half as the array will overwrite the values when reversing. As such, when the second half of the reversed array looks at the first half of the array, it will have the wrong inputs. 
+* For example, the input 1,2,3,4 will lead to the output 4,3,3,4 even though the expected output is 4,3,2,1. 
+
+![reverseInPlace](reverseInPlace.png)
+
+* By creating a temporary array and storing the reversed inputs in there, we can avoid overwriting the original inputs and thus creating an error of mirroring. 
+
+```
+static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(0, s);
+      }
+    }
+    return result;
+  }
+```
+* The failure inducing input is when we have inputs that filters out outputs with a size larger than 1. This is because our method to add the filtered outputs to the filtered list only adds the outputs to the very first index. This is because our add method is (0, s). 
+* For example, the input "hello", "no", "world", "yes" will result in the output "world", "hello" instead of the expected "hello", "world". 
+![linkedListTest](linkedListTest.png)
+* This can be solved by creating an index that increases when we find a new filtered output making it so that the output will be added at the end of the list instead of at the front. 
+
+
+
+![correctLinkedList](correctLinkedList.png)
 
 
