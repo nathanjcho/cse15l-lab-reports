@@ -1,0 +1,4 @@
+String turnedString = f.toString();
+if(turnedString.contains(parameters[1])) {
+  foundPaths.add(f.toString());
+}
