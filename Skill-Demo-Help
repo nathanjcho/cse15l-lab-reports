@@ -5,6 +5,7 @@ git clone skill-demo1 url
 
 http://ieng6-202.ucsd.edu:5432/
 
+scp DocSearchServer.java cs15lfa22lc@ieng6.ucsd.edu:~/skill-demo1/skill-demo1
 
 String turnedString = f.toString();
 if(turnedString.contains(parameters[1])) {
