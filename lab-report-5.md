@@ -62,4 +62,16 @@ fi
 * Example # 3 
 * Repository: https://github.com/ucsd-cse15l-f22/list-methods-filename
 
-*
+* Trace: 
+* Line 3: stdout = "" ; stderr = "" ; exit code = 0
+* Line 5: stdout = "" ; stderr = "Cloning into 'student submission'..." ; exit code = 0
+* Line 7: stdout = "Finished cloning" ; stderr = "" ; exit code = 0
+* Line 12: The if statement's condition is true since the repository name does not match "ListExampes.java"
+* Line 14: stdout = "ListExamples.java is either missing or incorrect, please resubmit" ; stderr = "" ; exit code = 0
+* Line 16: stdout = "You received a 0 of 3" ; stderr = "" ; exit code = 0
+* Line 19-25: Does not run due to early exit. 
+* Line 27: The if statement's condition is false as the repository name does not match "ListExampes.java and thus will not be able to compile properly. 
+* Line 28-32: Does not run due to non-evaluated if branch
+* Line 34: Does not run due to early exit. 
+* Line 36: The if statement's condition is false as the repository name does not match "ListExampes.java and thus will not be able to compare the exit code.
+* Line 37-46: Does not run due to non-evaluated if branch
