@@ -6,4 +6,6 @@ Hello, world!
 
 [Lab Report 3](https://nathanjcho.github.io/cse15l-lab-reports/lab-report-3.html)
 
+[Lab Report 4](https://nathanjcho.github.io/cse15l-lab-reports/lab-report-4.html)
+
 [Lab Report 5](https://nathanjcho.github.io/cse15l-lab-reports/lab-report-5.html)
